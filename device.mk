@@ -460,3 +460,9 @@ PRODUCT_BOOT_JARS += \
 # Seamless transfer
 PRODUCT_PRODUCT_PROPERTIES += \
     sys.fflag.override.settings_seamless_transfer=true
+
+# ZRAM writeback
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24
