@@ -92,7 +92,7 @@
     <string name="kcal_not_supported">Display color settings is not supported by the kernel</string>
     <string name="red_slider_title">Red</string>
     <string name="green_slider_title">Green</string>
-    <string name="blue_slider_title">Blue</string>    
+    <string name="blue_slider_title">Blue</string>
     <string name="kcal_rgb_preference_category_title">RGB</string>
     <string name="kcal_calibration_preference_category_title">Color calibration</string>
     <string name="saturation_slider_title">Saturation</string>
@@ -113,4 +113,15 @@
 
     <string name="doze_brightness_title">Doze brightness</string>
     <string name="doze_brightness_summary">%s mode is enabled</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Touch Control</string>
+    <string name="touch_game_mode_title">Enable game mode</string>
+    <string name="touch_game_mode_summary">Increases touch sampling rate to 180Hz</string>
+    <string name="touch_response_title">Touch response</string>
+    <string name="touch_response_summary">Controls touch response</string>
+    <string name="touch_sensitivity_title">Touch sensitivity</string>
+    <string name="touch_sensitivity_summary">Controls touch sensitivity for repeated taps</string>
+    <string name="touch_resistant_title">Touch-resistant area</string>
+    <string name="touch_resistant_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls</string>
 </resources>
