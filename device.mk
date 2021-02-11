@@ -308,6 +308,9 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-system
 
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayEB
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
