@@ -121,7 +121,7 @@ dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
-	
+
 # Display
 debug.egl.hw=0
 debug.hwui.renderer=skiavk
@@ -168,6 +168,10 @@ persist.sys.sf.color_mode=9
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM7150
 
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
