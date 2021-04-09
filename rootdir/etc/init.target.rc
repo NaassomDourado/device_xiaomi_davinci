@@ -57,7 +57,7 @@ on property:ro.boot.product.hardware.sku=davinci
     enable vendor.nfc_hal_service
 
 on fs
-    mount_all --early
+    mount_all --early /vendor/etc/fstab.qcom
 
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
@@ -74,7 +74,7 @@ on late-fs
     
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
-    mount_all --late
+    mount_all --late /vendor/etc/fstab.qcom
 
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
@@ -190,7 +190,7 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/swappiness 100
 
     # Enable ZRAM on boot_complete
-    swapon_all /vendor/etc/fstab.qcom
+    swapon_all /vendor/etc/fstab.zram
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
