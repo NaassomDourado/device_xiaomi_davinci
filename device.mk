@@ -309,6 +309,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-system
 
 PRODUCT_PACKAGES += \
+	FrameworkResOverlayEA \
     FrameworkResOverlayEB
 
 # Power
