@@ -322,3 +322,8 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     oneshot
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
