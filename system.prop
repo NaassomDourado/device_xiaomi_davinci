@@ -17,6 +17,9 @@ ro.com.google.ime.kb_pad_port_b=1
 # lmkd
 ro.config.low_ram=false
 
+# iorapd
+ro.iorapd.enable=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
