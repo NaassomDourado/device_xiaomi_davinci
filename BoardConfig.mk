@@ -115,9 +115,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := davinci_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
-TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
-
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa88000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
@@ -211,15 +208,6 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-
-# Hardware
-PRODUCT_BOARD_PLATFORM := sm6150
-PRODUCT_USES_QCOM_HARDWARE := true
-
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8150/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media
 
 # ANXCamera
 include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
