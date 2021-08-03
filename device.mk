@@ -157,7 +157,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/spark/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/bliss/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
+# FOD
+TARGET_HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true
 
 # FM
 PRODUCT_PACKAGES += \
@@ -298,7 +302,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-spark \
+    $(LOCAL_PATH)/overlay-bliss \
     $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
@@ -452,4 +456,3 @@ PRODUCT_BOOT_JARS += \
 # Seamless transfer
 PRODUCT_PRODUCT_PROPERTIES += \
     sys.fflag.override.settings_seamless_transfer=true
-
