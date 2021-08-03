@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_davinci.mk
+    $(LOCAL_DIR)/bliss_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_davinci-user \
-    spark_davinci-userdebug \
-    spark_davinci-eng
+    bliss_davinci-user \
+    bliss_davinci-userdebug \
+    bliss_davinci-eng

@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
-PRODUCT_NAME := spark_davinci
+PRODUCT_NAME := bliss_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
@@ -32,7 +32,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-SPARK_BUILD_TYPE := OFFICIAL
-TARGET_USES_BLUR := true
-WITH_FOD_ANIMATIONS := true
+TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_CCACHE=1
+BLISS_BUILD_VARIANT=gapps
+BLISS_BUILDTYPE=OFFICIAL

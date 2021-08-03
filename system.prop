@@ -54,8 +54,5 @@ wifi.interface=wlan0
 #youtube2160p
 sys.display-size=3840x2160
 
-ro.spark.status=Official
-ro.spark.maintainer=spkal01
-
 mm.enable.smoothstreaming=true
 
