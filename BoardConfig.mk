@@ -210,8 +210,6 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# ANXCamera
-include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
 
 # FOD key for InputDispatcher to skip
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 338
