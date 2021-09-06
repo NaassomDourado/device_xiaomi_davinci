@@ -34,4 +34,9 @@
     <integer name="config_maxVisibleNotificationIcons">9</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">10</integer>
 
+    <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
+    <!-- Burn in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 </resources>
