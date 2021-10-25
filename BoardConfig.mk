@@ -66,6 +66,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
+$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 
 # Display
 TARGET_USES_COLOR_METADATA := true
